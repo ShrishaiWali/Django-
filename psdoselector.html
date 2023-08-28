@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psudo selector</title>
+    <style>
+        .cont{
+            border: 3px solid red;
+            width: 50%;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+            font-size:medium;
+            background-color: beige;
+        }
+      a{
+        text-decoration: none;
+      }
+      .btn{
+        background-color: aqua;
+        border: 1px solid rgb(55, 192, 14);
+        margin: auto;
+        padding: 5px;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+      a:hover{
+        background-color: rgb(206, 159, 245);
+        border-radius: 20px;
+      }
+      a:visited{
+        background-color:yellow ;
+      }
+      a:active{
+        color:#fff;
+        background-color: blueviolet;
+        transform: scale(.8,.8) rotate(-7deg);
+
+      }
+   
+      /* .btn:hover{
+        background-color: rgb(236, 130, 69);
+        border-radius: 20px;
+      } */
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <h2>Psudo selector</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus expedita in tempore quidem sunt molestias voluptate! Dolores facilis, pariatur optio illum eaque labore ut voluptatibus porro doloribus in alias cumque, eligendi voluptatum dolore recusandae tempora ratione maiores! Unde modi dolor beatae deleniti officiis optio molestias sint veritatis nemo, est magnam.
+        </p>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="btn" target="_blank">Read More</a>
+        <button class="btn"> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">Contact us</a></button>
+    </div>
+</body>
+</html>

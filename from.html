@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .search{
+        background-color: aquamarine;
+        padding: 1px;
+        border-radius:5%;
+        margin-top:-27px; 
+      }
+    </style>
+</head>
+<body>
+    <h4>from</h4>
+    <form action="Backend.php">
+       <pre><h3><label for="name">Name</label> <label for="email">Email</label></h3></pre> 
+        <hr><hr>
+        <div id="class">
+            Name: <input type="search" class="search" id="name" placeholder="Search" title="Enter your name to search ">
+        </div>
+        <hr>
+        <div>
+            Email:<input type="email" id="email" name="my email" title="Enter your Email Here">
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="submit Now">
+            <br>
+            Date: <input type="date" name="date" id="" title="Enter your date as per 10 Mark sheet">
+            <br>
+            Number: <input type="number" title="Number">
+            <br>
+            Are you Eligebale <input type="checkbox" title="If you Eligebale click on Button">
+            <br>
+            Gender : Male <input type="radio" name="Gender"> Female <input type="radio" name="Gender" id="">
+            <br>
+            <input type="reset" name="" id="">
+            <br>
+            Write About Yourself: <br> <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <label for="car">CAR</label>
+            <select name="MY Car" id="car">
+                <option value="Ind">Indica</option>
+                <option value="Maru" >Maruthi</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <label for="Bike">Bike</label>
+            <select name="Bikes" id="Bike">
+                <option value="">Select Your Bike</option>
+                <option value="Hero">Hero Honda</option>
+                <option value="Suzu">Suzuki</option>
+                <option value="Royal">Royal Enfield</option>
+                <option value="Hima">Himalyan</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>

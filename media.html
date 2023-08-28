@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .animation {
+                    animation: vibrate 0.3s linear infinite both;
+                    }
+
+         @media (prefers-reduced-motion: reduce) {
+        .animation {
+                        animation: none;
+                    }
+                    }
+
+    </style>
+</head>
+<body>
+    <div class="animation">animated box</div>
+
+</body>
+</html>

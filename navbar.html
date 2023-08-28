@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <style>
+        .navbar{
+            background-color: rgb(37, 34, 34);
+            border-radius: 12px;
+            position: fixed;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float: left;
+            list-style: none;
+            margin: 12px;
+            padding: 3px;           
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+        .navbar li a:hover{
+            color: red;
+        }
+        .search{
+            float: right;
+            margin: 2px;
+            padding: 11px;
+            border-radius: 10px;
+        }
+        #one{
+            border-radius: 12px;
+            width: 200px;
+            height:25px;
+        }
+        #any{
+            background-color: rgb(235, 243, 241);
+            margin: 2px;
+            border-radius: 10px;
+            height: 25px;
+            width: 105px;
+        }
+        .img{   
+             height: 746px;
+             width: 99%;
+             margin-left: 2px;
+}
+.img-text{
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    width: 600px;
+    padding: 5px;
+    margin: 15px;
+    /* transform: translate(-50%, -50%); */
+    background-color: rgba(255, 255, 255, 0.7); 
+    border-radius: 10px;
+    border: 2px solid red;
+    box-shadow: 9px 9px 2px #cf4d4d;;
+}
+.img-text2{
+    position:absolute;
+    top: 60%;
+    left: 45%;
+    width: 600px;
+    border: 2px solid red;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About US</a></li>
+                <li><a href="#">Contact US</a></li>
+                <div class="search">
+                    <input type="search" name="search" id="one" placeholder="Search content">
+                    <label for="web"></label>
+                    <select name="web" id="any">
+                        <option value="Gmail">Google</option>
+                        <option value="google">Gmail</option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="Twitter">Twitter</option>
+                    </select>
+                
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <img src="https://img.redbull.com/images/c_fill,g_auto,w_1680,h_700/q_auto,f_auto/redbullcom/2020/7/2/lokncaypfijgoifbsjvj/red-bull-reign-2019-india-finals" alt="backetball" class="img">
+        <!-- <div class="img-text">
+              <h2>"To be the best, you have to work the hardest. You have to chase what seems impossible over and over and over again, because giving up is not an option, and when you feel like you've reached your limit, it's only the beginning, that's when it's time to dig deep, to find the courage to push some more."</h2>
+        </div>
+        <div class="img-text2">
+            <h2>Confidence is one of the most important attributes of a successful basketball player. Sometimes, the right words can encourage you when you need it the most and give you that extra push to succeed. Read on for some great quotes that will boost your confidence and give you the encouragement you need to become the best basketball player you can be.</h2>
+        </div> -->
+    </div>
+</body>
+</html>

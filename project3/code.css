@@ -1,0 +1,180 @@
+
+
+body{
+    height: 500%;
+}
+
+#navbar{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+img{
+    width:70%;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 25px;
+    transform: perspective();
+    
+}
+.vct{
+    margin: 10px;
+}
+
+#navbar ul{
+    width: 1000rem;
+    display: flex;
+    text-decoration: none;
+}
+
+#navbar ul li{
+    list-style:none ;
+    text-decoration: none;
+}
+
+#navbar ul li a{
+    margin: 5px;
+    color: white;
+    display: block;
+    padding: 2px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 200px;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    padding: 10px;
+    text-align: center;
+    height: 100%;
+    
+}
+
+#home::before{
+    content: "";
+    background:url('img5.jpg');
+    position: absolute;
+    height: 120%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.79;
+}
+.primary{
+    font-size: xx-large;
+    text-transform: uppercase;
+    text-decoration:wavy;
+    height: 100%;
+}
+.primary:hover{
+    color: red;
+    cursor: pointer;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    /* animation: slideUp 2s ease-in-out infinite; */
+    /* animation: fadeInOut 2s ease-in-out infinite; */
+    animation: crazyAnimation 5s ease-in-out infinite;
+}
+
+/* @keyframes slideUp {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+} */
+
+/* @keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+} */
+
+
+@keyframes crazyAnimation {
+    0%, 100% {
+        transform: rotate(0) scale(1);
+        color: #333;
+    }
+    25% {
+        transform: rotate(180deg) scale(1.5);
+        color: #ff0000;
+    }
+    50% {
+        transform: rotate(360deg) scale(2);
+        color: #00ff00;
+    }
+    75% {
+        transform: rotate(540deg) scale(1.5);
+        color: #0000ff;
+    }
+}
+
+.primary{
+    margin: 0px;
+    height: 50px;
+    border: 2px solid red;
+    box-shadow:2px 3px 2px green;
+}
+
+.primary, .seco{
+    margin: 10px;
+}
+.seco{
+    text-decoration:solid;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: large;
+}
+
+.btn{
+    background-color: rgb(119, 115, 110);
+    box-shadow: 2px 2px 2px green;
+    margin: 2px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+#services{
+}
+.img222 {
+    width: 100%;
+    height: 10%;
+    padding: 0;
+    margin: 0px;
+    border-radius: 24px;
+}
+#id{
+    image-resolution: 20px;
+    width: 100%;
+    height: 50%;
+    flex-wrap: wrap;
+}
+
